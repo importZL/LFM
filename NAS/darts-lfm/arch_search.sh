@@ -4,3 +4,5 @@ python train_search_lfm.py \
     --unrolled \
     --save darts-cifar100 \
     --encoder_size 34 \
+    --batch_size 32 \
+    --report_freq 50 \
