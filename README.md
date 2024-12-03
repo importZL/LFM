@@ -9,6 +9,11 @@ The requiring environment is as bellow:
 - PyTorch 1.8.1 
 - Torchvision 0.9.1
 
+Or, you can use the following command to build the environment and get started:
+```bash
+conda env create -f environment.yml
+```
+
 
 ## Running application to NAS on benchmark datasets (CIFAR-10 and CIFAR-100).
 Here is an example about running the search stage of DARTS on CIFAR-10:
