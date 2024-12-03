@@ -125,6 +125,8 @@ def main():
         encoder = resnet50(pretrained=True).cuda()
     elif args.encoder_size == '101':
         encoder = resnet101(pretrained=True).cuda()
+    elif args.encoder_size == '152':
+        encoder = resnet152(pretrained=True).cuda()
 
     # contains r
     # TODO: check input size
