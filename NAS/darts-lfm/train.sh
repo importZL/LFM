@@ -1,0 +1,1 @@
+python train.py --auxiliary --cutout --arch DARTS --is_cifar100 1 --gpu 1
