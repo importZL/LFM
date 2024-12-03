@@ -1,0 +1,6 @@
+2024-12-03 08:44:28,056 args = Namespace(workers=2, batch_size=32, learning_rate=0.025, learning_rate_min=0.0, momentum=0.9, weight_decay=0.0003, report_freq=50.0, epochs=25, init_channels=16, layers=5, cutout=False, cutout_length=16, drop_path_prob=0.3, save='pdarts-cifar100search-try-20241203-084428-cifar100', seed=2, grad_clip=5, train_portion=0.5, arch_learning_rate=0.0006, tmp_data_dir='../data', note='try', dropout_rate=[0.1, 0.4, 0.7], add_width=['0'], add_layers=['0', '6', '12'], gpu='0', learning_rate_w1=0.25, learning_rate_w2=0.1, learning_rate_A=0.0006, learning_rate_V=0.01, learning_rate_r=0.01, momentum_w1=0.9, momentum_w2=0.9, momentum_A=0.9, momentum_V=0.9, momentum_r=0.9, weight_decay_w1=0.0001, weight_decay_w2=0.0001, weight_decay_A=1e-05, weight_decay_V=0.0001, weight_decay_r=0.0001, grad_clip_w1=5, grad_clip_w2=5, grad_clip_A=5, grad_clip_V=5, grad_clip_r=5, is_parallel=0, encoder_size='101', is_cifar100=1, resume='')
+2024-12-03 08:44:35,208 param size = 2.598152MB
+2024-12-03 08:44:35,218 Stage 0 Epoch 0 lr_w1 0.250000 lr_w2 0.100000 lr_A 0.000600 lr_V 0.010000 lr_r 0.010000
+2024-12-03 08:44:37,204 TRAIN Step: 000 Objs: 3.698381e+00 R1: 40.625000 R5: 65.625000
+2024-12-03 08:44:57,904 TRAIN Step: 050 Objs: 4.240362e+00 R1: 8.333333 R5: 22.181373
+2024-12-03 08:45:20,019 TRAIN Step: 100 Objs: 4.246094e+00 R1: 7.240099 R5: 21.751238
