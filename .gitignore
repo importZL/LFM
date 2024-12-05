@@ -1,0 +1,7 @@
+*/data/*
+__pycache__
+runs
+search-*
+pdarts-cifar100search*
+git_update.sh
+eval-*
