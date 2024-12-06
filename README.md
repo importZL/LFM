@@ -1,13 +1,13 @@
 # Learning_From_Mistakes
-Learning From Mistakes: A Multi-level Optimization Framework (Official Pytorch implementation for applications to Neural Architecture Search (NAS) and Data Reweighting (DR)).
+Learning From Mistakes: A Multi-level Optimization Framework (Official Pytorch implementation for applications on Neural Architecture Search (NAS) and Data Reweighting (DR)).
 
 ## Setups
 The requiring environment is as bellow:  
 
 - Linux 
 - Python 3+
-- PyTorch 1.8.1 
-- Torchvision 0.9.1
+- PyTorch 
+- Torchvision
 
 Or, you can use the following command to build the environment and get started:
 ```bash
@@ -16,7 +16,7 @@ conda env create -f environment.yml
 
 
 ## Running application to NAS on benchmark datasets (CIFAR-10 and CIFAR-100).
-Here is an example about running the search stage of DARTS on CIFAR-10:
+Here is an example about running the architecture search stage of DARTS on CIFAR-10:
 ```bash
 python train_search_lfm.py --is_cifar100 0 --gpu 0 --unrolled --save darts-cifar10
 ```
