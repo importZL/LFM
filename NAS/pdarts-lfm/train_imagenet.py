@@ -42,7 +42,7 @@ parser.add_argument('--tmp_data_dir', type=str, default='../data', help='temp da
 parser.add_argument('--note', type=str, default='imagenet-pdarts-cifar10', help='note for this run')
 
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
-parser.add_argument('--is_parallel', type=int, default=1)
+parser.add_argument('--is_parallel', type=int, default=0)
 
 args, unparsed = parser.parse_known_args()
 
@@ -91,6 +91,8 @@ def main():
             model = nn.parallel.DataParallel(
                 model, device_ids=gpus, output_device=gpus[0])
             model = model.module
+        else:
+            model = model.cuda()
     else:
         model = model.cuda()
     logging.info("param size = %fMB", utils.count_parameters_in_MB(model))
