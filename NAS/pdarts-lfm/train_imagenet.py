@@ -20,8 +20,8 @@ from model import NetworkImageNet as Network
 
 
 parser = argparse.ArgumentParser("training imagenet")
-parser.add_argument('--workers', type=int, default=4, help='number of workers to load dataset')
-parser.add_argument('--batch_size', type=int, default=1024, help='batch size')
+parser.add_argument('--workers', type=int, default=32, help='number of workers to load dataset')
+parser.add_argument('--batch_size', type=int, default=512, help='batch size')
 parser.add_argument('--learning_rate', type=float, default=0.5, help='init learning rate')
 parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
 parser.add_argument('--weight_decay', type=float, default=3e-5, help='weight decay')
@@ -34,14 +34,14 @@ parser.add_argument('--auxiliary_weight', type=float, default=0.4, help='weight 
 parser.add_argument('--drop_path_prob', type=float, default=0, help='drop path probability')
 parser.add_argument('--save', type=str, default='./', help='experiment name')
 parser.add_argument('--seed', type=int, default=0, help='random seed')
-parser.add_argument('--arch', type=str, default='PDARTS_LFM_cifar10_0505_sk2', help='which architecture to use')
+parser.add_argument('--arch', type=str, default='PDARTS_LFM_cifar100_20241205_sk2_152', help='which architecture to use')
 parser.add_argument('--grad_clip', type=float, default=5., help='gradient clipping')
 parser.add_argument('--label_smooth', type=float, default=0.1, help='label smoothing')
 parser.add_argument('--lr_scheduler', type=str, default='linear', help='lr scheduler, linear or cosine')
-parser.add_argument('--tmp_data_dir', type=str, default='../data', help='temp data dir')
-parser.add_argument('--note', type=str, default='imagenet-pdarts-cifar10', help='note for this run')
+parser.add_argument('--tmp_data_dir', type=str, default='/data/han', help='temp data dir')
+parser.add_argument('--note', type=str, default='imagenet-pdarts-cifar100', help='note for this run')
 
-parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
+parser.add_argument('--gpu', type=int, default=1, help='gpu device id')
 parser.add_argument('--is_parallel', type=int, default=0)
 
 args, unparsed = parser.parse_known_args()
