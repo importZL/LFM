@@ -1,5 +1,5 @@
 # Learning_From_Mistakes
-Learning From Mistakes: A Multi-level Optimization Framework (Official Pytorch implementation for applications on Neural Architecture Search (NAS) and Data Reweighting (DR)).
+Learning From Mistakes: A Multi-level Optimization Framework (Official Pytorch implementation for applications on Neural Architecture Search and Data Reweighting).
 
 ## Setups
 The requiring environment is as bellow:  
@@ -61,3 +61,9 @@ Checkpoints of the Application to DR (Label Noisy):
 - [Checkpoints for experiment on CIFAR-100 with 0.2 Flip Noisy](https://drive.google.com/file/d/1Ke1t7GYZ5sQT0seVW1L6R5n7qcU3rjex/view?usp=share_link)
 - [Checkpoints for experiment on CIFAR-100 with 0.4 Flip Noisy](https://drive.google.com/file/d/1QAQeBFrBcPpCaUuiCit5SSesYzWAZMc0/view?usp=share_link)
 
+
+## License
+This work is licensed under MIT license. See the [LICENSE](LICENSE) for details.
+
+## Acknowledgement
+We appreciate the developers of [Differentiable Architecture Search](https://github.com/quark0/darts) and [Meta-Weight-Net](https://github.com/xjtushujun/meta-weight-net), and we express our gratitude to these awesome projects.
